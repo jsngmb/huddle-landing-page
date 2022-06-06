@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans' !important;
+  background: url(../images/bg-mobile.svg) no-repeat var(--Violet) !important;
+  background-size: 100% !important;
+}
+
+main .container {
+  width: 350px;
+}
+
+main .container .logo {
+  width: 8em;
+}
+
+main .container .row .content h1 {
+  font-family: 'Poppins';
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0 20px;
+  color: white;
+}
+
+main .container .row .content p {
+  padding: 0 15px;
+  color: white;
+}
+
+main .container .row .content .btn {
+  padding: 10px 70px;
+  border-radius: 30px;
+  font-family: 'Poppins';
+  font-size: .9em;
+  color: var(--Violet);
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.385);
+          box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.385);
+}
+
+main .container .social .fa-brands {
+  border: 2px solid white;
+  font-size: 1em;
+  padding: 8px;
+  border-radius: 50%;
+  color: white;
+  margin: 0 5px;
+}
+
+main .container .social .fa-facebook-f {
+  width: 37px;
+  padding-right: 11px;
+}
+
+@media (min-width: 992px) {
+  body {
+    background: url(../images/bg-desktop.svg) no-repeat var(--Violet) !important;
+  }
+  main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main .container {
+    width: 1200px;
+  }
+  main .container .logo {
+    width: 12em;
+  }
+  main .container .row {
+    height: 400px;
+  }
+  main .container .row .content {
+    padding: 2.5em 1.5em;
+  }
+  main .container .row .content h1, main .container .row .content p {
+    padding: 0;
+  }
+  main .container .row .content h1 {
+    font-size: 2.6em;
+  }
+  main .container .row .content p {
+    font-size: 1.2em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
